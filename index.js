@@ -37,6 +37,6 @@ app.post("/upload", function(req, res) {
   });
 });
 
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 80;
 
-app.listen(port);
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
