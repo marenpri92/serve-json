@@ -37,4 +37,6 @@ app.post("/upload", function(req, res) {
   });
 });
 
-app.listen(8080);
+const port = process.env || 8080;
+
+app.listen(port);
